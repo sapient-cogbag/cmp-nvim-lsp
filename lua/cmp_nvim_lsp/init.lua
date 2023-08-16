@@ -236,7 +236,13 @@ M.modify_capabilities = function(override, capabilities)
         end, {
           "documentation",
           "detail",
-          "additionalTextEdits"
+          "additionalTextEdits",
+          "sortText",
+          "filterText",
+          "insertText",
+          "textEdit",
+          "insertTextFormat",
+          "insertTextMode"
         })
       apply_advanced_override(completionItem, override, "insertTextModeSupport", function(textmodes, extra_modes)
         textmodes = textmodes or {}
